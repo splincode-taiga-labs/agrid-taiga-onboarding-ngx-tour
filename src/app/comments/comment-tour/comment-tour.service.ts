@@ -27,6 +27,8 @@ const STEPS: IStepOption[] = [
         anchorId: TRAVEL_NOTES_TOUR_ANCHORS.trigger,
         placement: 'right',
         enableBackdrop: true,
+        // AG Grid может зарегистрировать anchor уже после запуска тура.
+        isAsync: true,
     },
     {
         stepId: TRAVEL_NOTES_TOUR_STEPS.tabs,
